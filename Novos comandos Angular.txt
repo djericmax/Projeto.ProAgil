@@ -1,0 +1,16 @@
+** Instalar a versão 7 do Angular.
+
+npm install -g @angular/cli@7
+_____________________________________________________________________
+
+npm install angular-imask@4.1.0
+
+npm i currency-formatter@1.5.3
+_____________________________________________________________________
+
+** Instalar o bootstrap e o fontawesome juntos
+
+npm i --save bootstrap  @fortawesome/fontawesome-free
+_____________________________________________________________________
+
+

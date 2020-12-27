@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "ProAgil-App"
+  "defaultProject": "ProAgil-App",
+  "cli": {
+    "analytics": "9ad01b4e-217f-4702-ac4a-4d0b247424a8"
+  }
 }
