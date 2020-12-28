@@ -13,4 +13,22 @@ _____________________________________________________________________
 npm i --save bootstrap  @fortawesome/fontawesome-free
 _____________________________________________________________________
 
+** Criar form no Component através do Emmet
 
+form>.form-group.mb-2>input.form-control.mr-2
+_____________________________________________________________________
+
+** Criar botão com classe button através do Emmet
+
+btn.btn.btn-outline-success{Buscar}
+_____________________________________________________________________
+
+** Criar tabela com cabeçalho e classe e 7 colunas através do Emmet
+
+table.table.table-striped>(thead.thead-dark>tr>th*7)
+____________________________________________________________________
+
+** Criar parte de listas da tabela com 7 colunas através do Emmet
+
+tbody>tr>td*7
+____________________________________________________________________
