@@ -1,3 +1,4 @@
+****************************** ANGULAR ******************************
 ** Instalar a versão 7 do Angular.
 
 npm install -g @angular/cli@7
@@ -32,3 +33,67 @@ ____________________________________________________________________
 
 tbody>tr>td*7
 ____________________________________________________________________
+**************************** .NET CORE *****************************
+
+** Criar biblioteca de Domínio para o projeto .net core
+
+dotnet new classlib -n ProAgil-Domain
+____________________________________________________________________
+
+** Criar biblioteca de Repositório para o projeto .net core
+
+dotnet new classlib -n ProAgil-Repository
+____________________________________________________________________
+
+** Criar a Solução (sln) para o projeto .net core
+
+dotnet new sln -n ProAgil
+____________________________________________________________________
+
+** Adicionar a referência de Domínio à biblioteca de Repositório
+
+dotnet add ProAgil-Repository/ProAgil-Repository.csproj reference
+ProAgil-Domain/ProAgil-Domain.csproj
+____________________________________________________________________
+
+** Adicionar a referência de Domínio ao Projeto API
+
+dotnet add ProAgil-API/ProAgil.API.csproj reference
+ProAgil-Domain/ProAgil-Domain.csproj
+____________________________________________________________________
+
+** Adicionar a referência de Repositório ao Projeto API
+
+dotnet add ProAgil-API/ProAgil.API.csproj reference
+ProAgil-Repository/ProAgil-Repository.csproj
+____________________________________________________________________
+
+** Adicionar a referência de Domínio, Repositório e API à Solução SLN
+
+dotnet sln ProAgil.sln add
+ProAgil-API/ProAgil.API.csproj
+ProAgil-Repository/ProAgil-Repository.csproj
+ProAgil-Domain/ProAgil-Domain.csproj
+____________________________________________________________________
+
+** Rodando nova Migrations em camadas, referência ao ProAgil-API
+
+dotnet ef --startup-project ../ProAgil-API migrations add Second
+____________________________________________________________________
+
+** 
+____________________________________________________________________
+
+** 
+____________________________________________________________________
+
+** 
+____________________________________________________________________
+
+** 
+____________________________________________________________________
+
+** 
+____________________________________________________________________
+
+** 
